@@ -12,7 +12,6 @@ body{
 }
 
 #home{
-    position: absolute;
     width: 100%;
     height: 99vh;
 }
@@ -29,7 +28,7 @@ video{
 .text{
     color: white;
     position: relative;
-    padding-top: 12%;
+    padding-top: 8%;
     left: 15%;
     width: 60%;
     font-family: 'Roboto', sans-serif;
@@ -75,7 +74,7 @@ padding-bottom: 10px;
     transform: scale(0.8) translateY(-5px);
 }
 
-@media (min-width: 400px) and (max-width: 786px){
+@media (min-width: 300px) and (max-width: 786px){
     .home{
         width: 100vw;
         height: 99vh;
@@ -93,3 +92,14 @@ padding-bottom: 10px;
 }
 
 /* about section  */
+.s-icons{
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+.card{
+    color: white;
+}
+.card-body p{
+    padding-top: 10px;
+}
