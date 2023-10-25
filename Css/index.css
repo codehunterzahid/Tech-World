@@ -78,7 +78,7 @@ padding-bottom: 10px;
     .home{
         width: 100vw;
         height: 99vh;
-    }
+        }
     .text{
         padding-top: 20%;
         width: 80%;
@@ -230,11 +230,104 @@ color: white;
 
 
 /* contact section  */
-/* .contact{
-    height: 100vh;
+.contact{
     width: 100%;
-    background-image: url(../Assets/contact.avif);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.address{
+    background-image:
+    linear-gradient(to bottom, rgba(74, 74, 77, 0.671), rgba(73, 65, 71, 0.854)),
+    url(../Assets/contact.avif);
+    width: 50%;
+    height: 100vh;
     background-position: center;
-    background-size: contain;
-    flex-wrap: wrap;
-} */
+    background-size: cover;
+}
+.add-content{
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    margin-top: 20%;
+    color: white;
+}
+.add-content span{
+    display: flex;
+    flex-direction: row;
+}
+.add-content span i{
+    font-size: 23px;
+    padding-top: 7px;
+}
+.add-content span h3{
+    padding-left: 15px;
+}
+.map h6{
+    padding-left: 38px;
+    color: rgb(61, 207, 61);
+}
+.map p{
+    padding-left: 35px;
+}
+.map{
+    padding-top: 30px;
+}
+.map a{
+    text-decoration: none;
+    padding-left: 35px;
+    color: white;
+    color: rgb(42, 168, 42);
+    transition: all ease 0.5s;
+}
+.map a:hover{
+    color: blue;
+}
+
+.message{
+    width: 50%;
+    height: 100vh;
+    background-color: #22A29B;
+}
+.msg-form{
+    padding: 8% 15% 0 15%;
+    padding-top: 0;
+}
+.msg-form button{
+    margin-top: 20px;
+}
+
+@media (min-width: 400px) and (max-width: 786px){
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .message, .address, .add-content{
+        width: 100%;
+        height: auto;
+    }
+    .add-content{
+        margin: 5%;
+    }
+    .msg-form{
+        padding: 5%;
+    }
+}
+
+@media (max-width: 400px){
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .message, .address, .add-content{
+        width: 100%;
+        height: auto;
+    }
+    .add-content{
+        margin: 5%;
+        font-size: 12px;
+    }
+    .msg-form{
+        padding: 5%;
+    }
+}
